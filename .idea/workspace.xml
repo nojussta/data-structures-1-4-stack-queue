@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2472a09c-adec-4d04-a2a3-aead365b0578" name="Changes" comment="">
+    <list default="true" id="2472a09c-adec-4d04-a2a3-aead365b0578" name="Changes" comment="add/updates-to-stack-intefrace">
+      <change afterPath="$PROJECT_DIR$/src/Classes/QueueInter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/StackInter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/StackInter.java" afterDir="false" />
     </list>
@@ -55,8 +56,19 @@
       <updated>1663599100504</updated>
       <workItem from="1663599102193" duration="450000" />
       <workItem from="1663599566881" duration="24000" />
-      <workItem from="1663613052324" duration="179000" />
+      <workItem from="1663613052324" duration="260000" />
+      <workItem from="1663762806256" duration="17000" />
+      <workItem from="1663773451901" duration="41000" />
+      <workItem from="1663773512974" duration="1184000" />
+      <workItem from="1664280357651" duration="1459000" />
     </task>
+    <task id="LOCAL−00001" summary="add/updates-to-stack-intefrace">
+      <created>1663613252315</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1663613252315</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,5 +84,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add/updates-to-stack-intefrace" />
+    <option name="LAST_COMMIT_MESSAGE" value="add/updates-to-stack-intefrace" />
   </component>
 </project>
