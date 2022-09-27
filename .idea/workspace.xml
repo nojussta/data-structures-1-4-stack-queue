@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2472a09c-adec-4d04-a2a3-aead365b0578" name="Changes" comment="add/updates-to-stack-intefrace">
-      <change afterPath="$PROJECT_DIR$/src/Classes/QueueInter.java" afterDir="false" />
+    <list default="true" id="2472a09c-adec-4d04-a2a3-aead365b0578" name="Changes" comment="add/updates-to-queue-interface">
+      <change afterPath="$PROJECT_DIR$/src/Classes/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Classes/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Classes/LinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Classes/LinkedListStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classes/QueueInter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/QueueInter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/StackInter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/StackInter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,7 +65,7 @@
       <workItem from="1663762806256" duration="17000" />
       <workItem from="1663773451901" duration="41000" />
       <workItem from="1663773512974" duration="1184000" />
-      <workItem from="1664280357651" duration="1459000" />
+      <workItem from="1664280357651" duration="2703000" />
     </task>
     <task id="LOCAL−00001" summary="add/updates-to-stack-intefrace">
       <created>1663613252315</created>
@@ -68,7 +73,25 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1663613252315</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="add/updates-to-stack-intefrace">
+      <created>1664281841967</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1664281841967</updated>
+    </task>
+    <task id="LOCAL−00003" summary="add/updates-to-queue-interface">
+      <created>1664281887116</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1664281887116</updated>
+    </task>
+    <task id="LOCAL−00004" summary="add/updates-to-queue-interface">
+      <created>1664281903388</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1664281903388</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add/updates-to-stack-intefrace" />
-    <option name="LAST_COMMIT_MESSAGE" value="add/updates-to-stack-intefrace" />
+    <MESSAGE value="add/updates-to-queue-interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="add/updates-to-queue-interface" />
   </component>
 </project>
