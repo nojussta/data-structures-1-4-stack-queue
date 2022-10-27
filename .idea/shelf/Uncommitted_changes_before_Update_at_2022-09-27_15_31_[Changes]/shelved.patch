@@ -1,0 +1,149 @@
+Index: src/Classes/QueueInter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Classes/QueueInter.java b/src/Classes/QueueInter.java
+new file mode 100644
+--- /dev/null	(date 1664281820947)
++++ b/src/Classes/QueueInter.java	(date 1664281820947)
+@@ -0,0 +1,87 @@
++package Classes;
++
++import java.util.ArrayList;
++import java.util.LinkedList;
++
++public interface QueueInter<E> {
++    void enqueue(E item);
++
++    E dequeue();
++
++    E peak();
++
++    boolean isEmpty();
++}
++
++class ArrayQueue<E> implements QueueInter<E> {
++
++    private ArrayList<E> thisList = new ArrayList<>();
++
++    public ArrayQueue() {
++        this.thisList = new ArrayList<E>();
++    }
++
++    public ArrayList<E> getCarList() {
++        return this.thisList;
++    }
++
++    @Override
++    public void enqueue(E item) {
++        thisList.add(item);
++    }
++
++    @Override // =====> O(n)
++    public E dequeue() {
++        E firstElement = peak();
++        if (firstElement != null) {
++            thisList.remove(0);
++        }
++        return firstElement;
++    }
++
++    @Override
++    public E peak() {
++        if (!isEmpty()) {
++            return thisList.get(0);
++        }
++        return null;
++    }
++
++    @Override
++    public boolean isEmpty() {
++        return thisList.size() == 0;
++    }
++}
++
++class LinkedListQueue<E> implements QueueInter<E> {
++    private LinkedList<E> thisList;
++
++    public LinkedListQueue() {
++        thisList = new java.util.LinkedList<E>();
++    }
++
++    public LinkedList<E> getCarList() {
++        return this.thisList;
++    }
++
++    @Override
++    public void enqueue(E item) {
++        thisList.add(item);
++    }
++
++    @Override
++    public E dequeue() {
++        E firstElement = thisList.removeFirst();
++        return firstElement;
++    }
++
++    @Override
++    public E peak() {
++        return thisList.peek();
++    }
++
++    @Override
++    public boolean isEmpty() {
++        return thisList.isEmpty();
++    }
++}
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"2472a09c-adec-4d04-a2a3-aead365b0578\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Classes/StackInter.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Classes/StackInter.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"Interface\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2EzWsMq4egbcrhYhEdZ72QvQBax\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/Desktop/Duomenų struktūros/Lab1/Lab1b_BendriniaiSarasai&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"2472a09c-adec-4d04-a2a3-aead365b0578\" name=\"Changes\" comment=\"\" />\r\n      <created>1663599100504</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1663599100504</updated>\r\n      <workItem from=\"1663599102193\" duration=\"450000\" />\r\n      <workItem from=\"1663599566881\" duration=\"24000\" />\r\n      <workItem from=\"1663613052324\" duration=\"179000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 01101c0b7debf92b074d2ff6dd41dbd093d5bf3a)
++++ b/.idea/workspace.xml	(date 1664281828060)
+@@ -4,7 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="2472a09c-adec-4d04-a2a3-aead365b0578" name="Changes" comment="">
++    <list default="true" id="2472a09c-adec-4d04-a2a3-aead365b0578" name="Changes" comment="add/updates-to-stack-intefrace">
++      <change afterPath="$PROJECT_DIR$/src/Classes/QueueInter.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Classes/StackInter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/StackInter.java" afterDir="false" />
+     </list>
+@@ -55,8 +56,19 @@
+       <updated>1663599100504</updated>
+       <workItem from="1663599102193" duration="450000" />
+       <workItem from="1663599566881" duration="24000" />
+-      <workItem from="1663613052324" duration="179000" />
++      <workItem from="1663613052324" duration="260000" />
++      <workItem from="1663762806256" duration="17000" />
++      <workItem from="1663773451901" duration="41000" />
++      <workItem from="1663773512974" duration="1184000" />
++      <workItem from="1664280357651" duration="1459000" />
++    </task>
++    <task id="LOCAL−00001" summary="add/updates-to-stack-intefrace">
++      <created>1663613252315</created>
++      <option name="number" value="LOCAL−00001" />
++      <option name="presentableId" value="LOCAL−00001" />
++      <updated>1663613252315</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -73,4 +85,8 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="add/updates-to-stack-intefrace" />
++    <option name="LAST_COMMIT_MESSAGE" value="add/updates-to-stack-intefrace" />
++  </component>
+ </project>
+\ No newline at end of file
