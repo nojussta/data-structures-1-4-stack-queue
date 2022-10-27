@@ -3,6 +3,8 @@ import Classes.LinkedListStack;
 import Classes.QueueInter;
 import Classes.StackInter;
 
+import java.util.LinkedList;
+
 public class Main {
     public static <E> void main(String[] args) {
         System.out.println("===============================Array stack===============================");
@@ -31,5 +33,7 @@ public class Main {
             System.out.println(linkedListStack.peek());
             System.out.println(linkedListStack.pop());
         }
+
+        LinkedList<String> test = new LinkedList<>();
     }
 }

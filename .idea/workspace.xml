@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2472a09c-adec-4d04-a2a3-aead365b0578" name="Changes" comment="add/updates-to-queue-interface">
-      <change afterPath="$PROJECT_DIR$/src/Classes/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Classes/ArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Classes/LinkedListQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Classes/LinkedListStack.java" afterDir="false" />
+    <list default="true" id="2472a09c-adec-4d04-a2a3-aead365b0578" name="Changes" comment="add/updates-to-interfaces">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classes/QueueInter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/QueueInter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classes/StackInter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/StackInter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,18 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/Desktop/Duomenų struktūros/Lab1/Lab1b_BendriniaiSarasai&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Lenovo/IdeaProjects/data-structures-1-4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,7 +59,11 @@
       <workItem from="1663762806256" duration="17000" />
       <workItem from="1663773451901" duration="41000" />
       <workItem from="1663773512974" duration="1184000" />
-      <workItem from="1664280357651" duration="2703000" />
+      <workItem from="1664280357651" duration="2754000" />
+      <workItem from="1664787716060" duration="14000" />
+      <workItem from="1664791213134" duration="1167000" />
+      <workItem from="1664793291880" duration="87000" />
+      <workItem from="1664885761168" duration="1008000" />
     </task>
     <task id="LOCAL−00001" summary="add/updates-to-stack-intefrace">
       <created>1663613252315</created>
@@ -91,7 +89,25 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1664281903388</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="add/updates-to-array">
+      <created>1664283104579</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1664283104579</updated>
+    </task>
+    <task id="LOCAL−00006" summary="add/updates-to-linkedlist">
+      <created>1664283116402</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1664283116402</updated>
+    </task>
+    <task id="LOCAL−00007" summary="add/updates-to-interfaces">
+      <created>1664283126820</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1664283126820</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +127,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add/updates-to-stack-intefrace" />
     <MESSAGE value="add/updates-to-queue-interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="add/updates-to-queue-interface" />
+    <MESSAGE value="add/updates-to-array" />
+    <MESSAGE value="add/updates-to-linkedlist" />
+    <MESSAGE value="add/updates-to-interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="add/updates-to-interfaces" />
   </component>
 </project>
